@@ -1,0 +1,259 @@
+//header
+header {
+  .contact-strip {
+    width: 100vw;
+    margin: 0;
+    padding: 1em 2em;
+    background-color: $yellow;
+    
+    @include breakpoint(large-up) {
+      display: flex;
+      align-content: space-between;
+    }
+    
+    h4 {
+      margin: 0 auto;
+      
+      @include breakpoint(large-up) {
+       margin: 0 auto 0 0;
+      }
+      
+      a {
+        color: $charcoal;
+        
+        &:hover,
+        &:focus {
+          color: $charcoal-hover;
+          
+          i {
+            color: $charcoal-hover;
+          }
+        }
+      }
+    }
+    
+    h4 + h4 {
+      @include breakpoint(large-up) {
+        margin: 0 0 0 auto;
+      }
+    }
+  }  
+  
+  .main-logo {
+    display: block;
+    height: auto;
+    width: 50vw;
+    max-width: 280px;
+    margin: 2em auto;
+  }
+}
+
+
+//navigation
+nav {
+  background-color: $white;
+  width: 100%;
+  padding: 0;
+  margin: .6em auto;
+  text-align: center;
+  
+  @include breakpoint(tablet-down) {
+    margin: 0;
+  }
+  
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    width: 100%;
+
+    li {
+      display: inline;
+      
+      @include breakpoint(tablet-down) {
+        display: block;
+        width: 100%;
+        line-height: 1;
+        margin: 0 auto;
+      }
+      
+      a {
+        color: $charcoal;
+        line-height: 1;
+        font-weight: $bold;
+        padding: .25em 1em;
+        transition: all .3s ease;
+      
+        @include breakpoint(tablet-down) {
+          background-color: $near-white;
+          border-bottom: $gray;
+          width: 100%;
+          display: block;
+          padding: 0;
+          line-height: 2;
+          
+          &:hover,
+          &:focus,
+          &.active {
+            color: $white;
+          }
+          
+          &.red {
+            &:hover,
+            &:focus,
+            &.active {
+              background-color: $red;
+            }
+          }
+
+          &.orange {
+            &:hover,
+            &:focus,
+            &.active {
+              background-color: $orange;
+            }
+          }
+
+          &.yellow {
+            &:hover,
+            &:focus,
+            &.active {
+              background-color: $yellow;
+            }
+          }
+
+          &.green {
+            &:hover,
+            &:focus,
+            &.active {
+              background-color: $green;
+            }
+          }
+
+          &.blue {
+            &:hover,
+            &:focus,
+            &.active {
+              background-color: $blue;
+            }
+          }
+
+          &.purple {
+            &:hover,
+            &:focus,
+            &.active {
+              background-color: $purple;
+            }
+          }
+          
+          &.brown {
+            &:hover,
+            &:focus,
+            &.active {
+              background-color: $brown;
+            }
+          }
+        }
+
+        @include breakpoint(tablet-up) {
+          border-bottom: 5px solid transparent;
+
+          &.red {
+            &:hover,
+            &:focus,
+            &.active {
+              border-bottom: 5px solid $red;
+            }
+          }
+
+          &.orange {
+            &:hover,
+            &:focus,
+            &.active {
+              border-bottom: 5px solid $orange;
+            }
+          }
+
+          &.yellow {
+            &:hover,
+            &:focus,
+            &.active {
+              border-bottom: 5px solid $yellow;
+            }
+          }
+
+          &.green {
+            &:hover,
+            &:focus,
+            &.active {
+              border-bottom: 5px solid $green;
+            }
+          }
+
+          &.blue {
+            &:hover,
+            &:focus,
+            &.active {
+              border-bottom: 5px solid $blue;
+            }
+          }
+
+          &.purple {
+            &:hover,
+            &:focus,
+            &.active {
+              border-bottom: 5px solid $purple;
+            }
+          }
+          
+          &.brown {
+            &:hover,
+            &:focus,
+            &.active {
+              border-bottom: 5px solid $brown;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+//filters 
+.filter-module {
+  margin: 0 auto 2em; 
+  
+  span {
+    padding: .5em 1em;
+    border-radius: .15em;
+    transition: all .3s ease;
+    cursor: pointer;
+    
+    @include breakpoint(tablet-down) {
+      display: block;
+      width: 100%;
+    }
+  }
+  
+  .filter-cameron {
+    &.active {
+      background-color: $blue;
+      color: $white;
+    }
+  }
+  
+  .filter-hidalgo {
+    &.active {
+      background-color: $orange;
+      color: $white;
+    }
+  }
+  
+  .filter-all {
+    &.active {
+      background-color: $yellow;
+      color: $white;
+    }
+  }
+}

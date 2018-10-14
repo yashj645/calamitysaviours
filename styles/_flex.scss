@@ -1,0 +1,27 @@
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1em auto;
+  padding: 1em;
+  max-width: 1200px;
+  text-align: left;
+  justify-content: space-around;
+  align-items: center;
+  
+  &--bottom {
+    align-items: flex-end;
+  }
+   
+  .flex__item {
+    text-align: center;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+
+    @include breakpoint(mobile-up) {
+      width: 30%;
+      margin: 1em 1%;
+    }
+  }
+}

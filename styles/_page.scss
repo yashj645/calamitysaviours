@@ -1,0 +1,117 @@
+.step {
+  background-color: $white;
+  max-width: 1200px;
+  margin: 1em auto;
+
+  &__image {
+    display: inline-block;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 1em;
+
+    @include breakpoint(tablet-up) {
+      width: 30%;
+      margin-bottom: 0;
+      margin-right: 18%;
+    }
+
+  }
+
+  &__description {
+    display: inline-block;
+    width: 100%;
+    text-align: right;
+    vertical-align: top;
+    
+    * { 
+      text-align: left;
+    }
+    
+    h2 { 
+      margin: 0;
+    }
+
+    @include breakpoint(tablet-up) {
+      width: 50%;
+    }
+  }
+}
+
+.tile-bkgd {
+  background: $white url('https://3659c4545004469e80d74ea6ccc016fc.production.codepen.plumbing/assets/tile-bkgd.png') repeat;
+  
+  h1, h2, h3 {
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+
+.site-steps {
+  align-items: flex-end;
+  
+  .site-steps--1,
+  .site-steps--2,
+  .site-steps--3 {
+    max-width: 90%;
+    align-self: flex-end;
+    
+    @include breakpoint(mobile-down) {
+      margin-top: 2em;
+    }
+    
+    img {
+      max-width: 60%;
+      margin-bottom: 1em;
+    }
+    
+    @include breakpoint(mobile-up) {
+      max-width: 320px;
+      width: 28%;
+      margin: 0 2%;
+    }
+  }
+}
+
+.mission {
+  background-color: $yellow;
+}
+
+.sponsors {
+  text-align: center;
+  
+  &--logos {
+    text-align: center;
+    
+    img {
+      display: block;
+      width: 90%;
+      max-width: 200px;
+      margin: 1em auto;
+
+      @include breakpoint(mobile-up) {
+        display: inline-block;
+        width: 25vw;
+        max-width: 200px;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+
+//article/page specfic styles
+.home-wrapper {}
+
+.health-wrapper{}
+
+.legal-wrapper {}
+
+.business-wrapper {}
+
+.spiritual-wrapper {}
+
+.housing-wrapper {}
+
+.nonprofits-wrapper {}
+
+.reviews-wrapper {}

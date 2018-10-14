@@ -1,0 +1,83 @@
+////typography
+h1, h2, h3, h4, h5, h6 {
+  font-family: $nevis;
+  color: $charcoal;
+  margin: 0;
+  text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    max-width: 1200px;
+}
+
+h1 {
+  text-transform: capitalize;
+  font-size: 2em;
+  margin: 1em auto;
+  
+  @include breakpoint(mobile-up) {
+    font-size: 3em;
+  }
+}
+
+h2 {
+  font-size: 1.6em;
+  text-transform: uppercase;
+  margin: 1em auto;
+  
+  @include breakpoint(mobile-up) {
+    font-size: 2em;
+  }
+}
+
+h3 {
+  font-size: 1.375em;
+  margin: .75em auto;
+  text-transform: uppercase;
+  
+  @include breakpoint(mobile-up) {
+    font-size: 1.75em;
+  }
+}
+
+h4 {
+  font-size: 1.25em;
+  margin: .75em auto;
+}
+
+h5 {
+  font-size: 1em;
+  margin: .25em auto;
+}
+
+h6 {
+  font-size: .875em;
+  margin: 0 auto;
+}
+
+p {
+  font-family: $opensans;
+  font-weight: $normal;
+  font-size: 1em;
+  margin: 1em auto;
+}
+
+.tagline,
+.description {
+  color: $charcoal-hover;
+}
+
+a {
+  color: $charcoal;
+  text-decoration: none;
+  transition: all .3s ease;
+  
+  &.link {
+    color: $blue;
+  }
+}
+
+//lists
+ul,ol {}
+
+li, dl, dd {}

@@ -1,0 +1,86 @@
+//weights
+$bold: 700;
+$semi: 600;
+$normal: 400;
+$light: 300;
+
+//google font Open Sans
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600');
+
+$opensans: 'Open Sans', sans-serif;
+
+//Nevis
+@font-face {
+    font-family: 'NevisBold';
+    src:url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/138941/Nevis-Bold.ttf.woff') format('woff'),
+        url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/138941/Nevis-Bold.ttf.svg#Nevis-Bold') format('svg'),
+        url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/138941/Nevis-Bold.ttf.eot'),
+        url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/138941/Nevis-Bold.ttf.eot?#iefix') format('embedded-opentype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+
+$nevis: 'NevisBold', 'Helvetica Neue', 'Open Sans', Arial, sans-serif;
+
+
+
+////icons
+// fontawesome.io
+.fa {
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: 'liga';
+  transition: color .3s ease;
+  
+  &.fa-white { 
+    color: $white;
+    
+    &:hover,
+    &:focus {
+      color: $white-hover;
+    }
+  }
+  
+  &.fa-charcoal { 
+    color: $charcoal;
+    
+    &:hover,
+    &:focus {
+      color: $charcoal-hover;
+    }
+  }
+  
+  &.fa-blue { 
+    color: $blue;
+    
+    &:hover,
+    &:focus {
+      color: $blue-hover;
+    }
+  }
+  
+  &.fa-orange { 
+    color: $orange;
+    
+    &:hover,
+    &:focus {
+      color: $orange-hover;
+    }
+  }
+  
+  &.fa-yellow { 
+    color: $yellow;
+    
+    &:hover,
+    &:focus {
+      color: $yellow-hover;
+    }
+  }
+}

@@ -1,0 +1,33 @@
+//forms & inputs
+form {
+  .input-group {
+    label {
+      display: block;
+      font-size: .8em;
+      font-weight: bold;
+    }
+
+    input {
+      display: block;
+      padding: .5em;
+      min-width: 18em;
+      margin-bottom: 1em;
+    }
+    
+    textarea {
+      display: block;
+      min-width: 18em;
+      min-height: 8em;
+      max-width: 36em;
+      max-height: 18em;
+    }
+  }
+}
+
+input {
+  &:disabled {}
+  
+  &:required {
+    &::before {}
+  }
+}

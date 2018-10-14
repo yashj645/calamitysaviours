@@ -1,0 +1,30 @@
+////colors
+//primary 3 colors
+$blue: rgba(37,194,239,1);
+$blue-hover: rgba(37,194,239,.66);
+$blue-shade: rgba(0,171,220,1);
+
+$orange: rgba(239,96,0,1);
+$orange-hover: rgba(239,96,0,.66);
+$orange-shade: rgba(227,79,0,1);
+
+$yellow: rgba(249,174,59,1);
+$yellow-hover: rgba(249,174,59,.66);
+$yellow-shade: rgba(247,153,8,1);
+
+//grayscale
+$white: rgba(255,255,255,1);
+$white-hover: rgba(255,255,255,.66);
+$near-white: rgba(242,242,242,1);
+$charcoal: rgba(45,45,45,1);
+$gray: rgba(45,45,45,.66);
+$charcoal-hover: $gray;
+$overlay: rgba(45,45,45,.75);
+$black: rgba(0,0,0,1);
+
+//nav/link colors
+$red: rgba(235,28,36,1);
+$green: rgba(0,144,69,1);
+$purple: rgba(102,45,143,1);
+$babyblue: rgba(210,239,241,1);
+$brown: rgba(117,76,36,1);

@@ -1,0 +1,79 @@
+footer {
+  background-color: $yellow;
+  
+  .review {
+    padding-top: .5em;
+    
+    &--headline {
+      margin: .5em auto;
+    }
+    
+    &--form {
+      padding-bottom: .5em;
+      
+      .column {
+        width: 220px;
+        display: inline-block;
+        vertical-align: top;
+        
+        @include breakpoint(tablet-down) {
+          display: block;
+          margin: 0 auto;
+        }
+      }
+      
+      input,
+      label {
+        text-align: left;
+      }
+      
+      button {
+        margin: .5em 0;
+      }
+
+      .column + .column {
+        @include breakpoint(tablet-up) {
+          margin-left: 20px;
+        }
+      }
+    }
+  }
+  
+  .footer-strip {
+    background-color: $charcoal;
+    color: $white;
+    line-height: 2;
+    padding: .5em;
+    
+    h6 {
+      color: $white;
+      display: block;
+      margin: .5em auto;
+      text-align: center;
+      width: 100%;
+      
+      @include breakpoint(tablet-up) {
+        display: inline-block;
+        width: 49%;
+        margin: 0;
+        text-align: left;
+      }
+    }
+    
+    a {
+      display: block;
+      margin: .5em auto;
+      text-align: center;
+      width: 100%;
+      
+      @include breakpoint(tablet-up) {
+        display: inline-block;
+        width: 49%;
+        margin: 0;
+        text-align: right;
+      }
+      
+      i {}
+    }
+  }
+}

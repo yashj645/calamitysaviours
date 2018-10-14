@@ -1,0 +1,77 @@
+body {
+  margin: 0 auto;
+  max-width: 500px;
+  padding: 20px 0;
+}
+
+.payment-amount-buttons {
+  clear: both;
+  overflow: hidden;
+}
+
+.payment-amount-buttons .button-container {
+  box-sizing: border-box;
+  float: left;
+  padding: 2px;
+  width: 33.33%;
+}
+
+.payment-amount-buttons .button-container .button {
+  width: 100%;
+}
+
+.payment-amount-buttons .button-container .button.active,
+.payment-amount-buttons .button-container .button.active:hover,
+.payment-amount-buttons .button-container .button.active:focus {
+  background-color: #3dafd1;
+  border-color: #3dafd1;
+  color: #fff;
+  cursor: default;
+}
+
+.form-wrapper .field-list .fields.address .field.address1 {
+  width: 70%;
+}
+
+.form-wrapper .field-list .fields.address .field.address2 {
+  width: 26%;
+}
+
+.honor-type {
+  padding-top: 8px;
+}
+
+.field.city {
+  clear: both;
+}
+
+.field.cc-number {
+  width: 98%;
+}
+
+.field.cc-exp-month,
+.field.cc-exp-year {
+  max-width: 120px;
+  width: 98%;
+}
+
+.field.cc-cvc {
+  max-width: 80px;
+  width: 98%;
+}
+
+.button.btn-working[disabled] {
+  cursor: default;
+  opacity: 0.6;
+}
+
+.btn-state-working,
+.button.btn-working .btn-state-normal {
+  display: none;
+  visibility: hidden;
+}
+
+.button.btn-working[disabled] .btn-state-working {
+  display: inline;
+  visibility: visible;
+}

@@ -1,0 +1,124 @@
+////helper classes
+//color controls
+.color-blue {
+  color: $blue !important;
+  
+  * {
+    color: $blue !important;
+  }
+}
+
+.color-orange {
+  color: $orange !important;
+  
+  * {
+    color: $orange !important;
+  }
+}
+
+.color-yellow {
+  color: $yellow !important;
+  
+  * {
+    color: $yellow !important;
+  }
+}
+
+.color-white {
+  color: $white !important;
+  
+  * {
+    color: $white !important;
+  }
+}
+
+.color-charcoal {
+  color: $charcoal !important;
+  
+  * {
+    color: $charcoal !important;
+  }
+}
+
+.color-babyblue {
+  color: $babyblue !important;
+  
+  * {
+    color: $babyblue !important;
+  }
+}
+
+.color-brown {
+  color: $brown !important;
+  
+  * {
+    color: $brown !important;
+  }
+}
+
+//bkgd color controls
+.background-blue {
+  background-color: $blue !important;
+}
+
+.background-red {
+  background-color: $red !important;
+}
+
+.background-orange {
+  background-color: $orange !important;
+}
+
+.background-yellow {
+  background-color: $yellow !important;
+}
+
+.background-green {
+  background-color: $green !important;
+}
+
+.background-purple {
+  background-color: $purple !important;
+}
+
+.background-brown {
+  background-color: $brown !important;
+}
+
+.background-charcoal {
+  background-color: $charcoal !important;
+}
+
+.background-babyblue {
+  background-color: $babyblue !important;
+}
+
+//text aligns
+.text-left {
+  text-align: left !important;
+}
+
+.text-right {
+  text-align: right !important;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.uppercase {
+  text-transform: uppercase !important;  
+}
+
+//show and hide stuffs
+.hidden {
+  visibility: hidden;
+}
+
+.visible {
+  visibility: visible;
+}
+
+.hide {
+  display: none;
+}

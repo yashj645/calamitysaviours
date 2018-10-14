@@ -1,0 +1,49 @@
+//box-sizing
+* { box-sizing: border-box; }
+
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  
+  a, button, *[class*="link"] {
+    cursor: pointer;
+  }
+}
+
+body {
+  font-family: $opensans;
+  color: $charcoal;
+	background: $white;
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+  
+  header,
+  footer {
+    width: 100%;
+  }
+  
+  > article {
+    width: 100%;
+    
+    > section {
+      margin: 0 auto;
+      padding: 2em;
+    }
+  }
+}
+
+img {
+  width: 100%;
+  height: auto;
+  border: 0;
+}
+
+.wrapper {
+  display: none;
+}
+
+.current {
+  display: block;
+}

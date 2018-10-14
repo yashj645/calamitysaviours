@@ -1,0 +1,93 @@
+//lobotomized owl approach
+.cards * + * { 
+  margin-top: 1em; 
+}
+
+.cards {
+  .card {
+    padding: 1rem;
+    background-color: transparent;
+    transition: background-color .3s ease;
+    max-width: 40rem;
+    margin: 0 auto;
+    
+    * {
+      text-align: left;
+    }
+    
+    &:nth-of-type(odd) {
+      background-color: $near-white;
+    }
+    
+    &__title {
+      margin: 0 auto;
+    }
+    
+    &__address {}
+
+    &__link {
+      margin: .5em auto;
+      display: block;
+      text-align: center;
+      padding: .5em 1em;
+      max-width: 14em;
+      color: $white;
+      background-color: $yellow;
+      border-radius: .25em;
+      
+      //url word/line breaking
+      overflow-wrap: break-word;
+      word-wrap: break-word;
+      word-break: break-all;
+      word-break: break-word;
+      
+      &--tel {
+        color: $orange;
+        text-decoration: none;
+      }
+      
+      &--googlemap {
+        color: $gray;
+        text-decoration: none;
+      }
+    }
+    
+    &__quote {
+      quote {
+        font-style: italic;
+        text-align: center !important;
+        
+        &:before {
+          content: '\201C';
+          display: inline-block;
+          width: 1em;
+          height: 1em;
+          font-size: 2.2em;
+          font-weight: $bold;
+          color: $gray;
+          vertical-align: super;
+        }
+        
+        &:after {
+          content: '\201D';
+          display: inline-block;
+          width: 1em;
+          height: 1em;
+          font-size: 2.2em;
+          font-weight: $bold;
+          color: $gray;
+          vertical-align: initial;
+          position: relative;
+          top: 1em;
+          left: .5em;
+        }
+      }
+    }
+    
+    &__author {
+      text-align: center !important;
+    }
+    
+    &__description {}
+  }
+}
